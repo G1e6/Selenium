@@ -4,6 +4,7 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 
 public class CallbackTest {
 
@@ -29,6 +30,6 @@ public class CallbackTest {
 
     @Test
     void shouldTestSomething() {
-        driver.get("http://localhost:9999/");
+        driver.get("http://localhost:9999");
     }
 }
