@@ -2,19 +2,25 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 import org.junit.jupiter.api.*;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 
-import java.util.List;
 
 public class CallbackTest {
 
-    private WebDriver driver;
+    WebDriver driver;
+
+    ChromeOptions options = new ChromeOptions();
+    options.addArguments("--disable-dev-shm-usage");
+    options.addArguments("--no-sandbox");
+    options.addArguments("--headless");
+    driver = newChromeDriver(options);
+
 
     @BeforeAll
     static void setUpAll() {
 // убедитесь, что файл chromedriver.exe расположен именно в каталоге C:\tmp
-       // System.setProperty("webdriver.chrome.driver", "./webdriver/chromedriver");
+        // System.setProperty("webdriver.chrome.driver", "./webdriver/chromedriver");
         WebDriverManager.chromedriver().setup();
     }
 
