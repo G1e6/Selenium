@@ -62,7 +62,7 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="RunManager" selected="Gradle.CallbackTest (1)">
+  <component name="RunManager" selected="Gradle.CallbackTest.shouldTestSomething (1)">
     <configuration name="CallbackTest (1)" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -134,8 +134,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.CallbackTest (1)" />
         <item itemvalue="Gradle.CallbackTest.shouldTestSomething (1)" />
+        <item itemvalue="Gradle.CallbackTest (1)" />
         <item itemvalue="Gradle.CallbackTest.shouldTest (1)" />
       </list>
     </recent_temporary>
